@@ -8,12 +8,12 @@ function SideNav(){
             <aside className="side-nav">
                 <div className="menu-top">
                     <h2>Menu</h2>
-                    <span className="material-symbols-outlined">menu</span>
+                    <span onClick={{}} className="material-symbols-outlined">menu</span>
                 </div>
                 <div className='search-bar'>
 
                     <input type="search" name="search" id="search" placeholder=' search'/>
-                    <span class="material-symbols-outlined">search</span>
+                    <span onClick={{}} class="material-symbols-outlined">search</span>
                 </div>
                 <div className="tasks">
                     <h3>TASKS</h3>
@@ -51,16 +51,17 @@ function SideNav(){
                     <div>  <span class="material-symbols-outlined">add</span>Add New List</div> 
                 </div>
                 <div className="tags">
+                    <div className='tags__header'>
                     <h3>TAGS</h3>
+                    <span class="material-symbols-outlined">add</span>
+                    </div>
                     <ul>
-                        <li>Tag1</li>
-                        <li>Tag2</li>
-                        <li><span class="material-symbols-outlined">add</span>Add Tag</li>
+                        <li>Tag 1</li>
+                        <li>Tag 2</li>
+                        <li>Tag 3</li>                      
                     </ul>
-                    
-                    
                 </div>
-                <div>
+                <div className='side-nav__settings'>
                     <Link to="/settings">
                     <span class="material-symbols-outlined">tune</span> 
                     Settings

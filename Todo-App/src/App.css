@@ -8,8 +8,9 @@ ul{
 
 /*side nav*/
 .side-nav{
+  margin: 1rem;
   max-width: 220px;
-  padding: 0 1rem 1rem;
+  padding: 0 2rem 1rem;
   border-radius: 15px;
   border: 2px solid;
   background-color: rgb(243, 245, 247);
@@ -34,6 +35,11 @@ ul{
 .menu-top span:hover{
   cursor: pointer;
 }
+.search-bar{
+  background-color: #debb7e;
+  display: flex;
+  flex-wrap: nowrap;
+}
 .search-bar span{
   cursor: pointer;
 }
@@ -42,6 +48,7 @@ ul{
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  
 }
 .tasks li{
   
@@ -58,18 +65,47 @@ ul{
   cursor: pointer;
   box-shadow: 1px 1px 1px 1px ;
 }
-
-.tags ul{
+.tags{
+  position: relative;
+ 
+}
+.tags__header{
   display: flex;
-  gap: 5px;
+  justify-content: space-between;
+}
+.tags__header span{
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+.tags__header span:hover{
+  cursor: pointer;
+}
+.tags ul{
+  padding: 0;
+  margin-top: 0;
+  /* background-color: #555; */
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 .tags li{
-  background-color: rgb(0, 255, 128);
+  background-color: rgb(98, 187, 142);
   color: #fff;
   border-radius: 5px;
   padding: 0 2px;
 }
 .tags li:hover{
   cursor: pointer;
+  color: #555;
+  background-color: rgb(196, 209, 221);
+}
+.side-nav__settings{
+  margin-top: 25px;
 }
 /*side nav*/
+
+
+
+

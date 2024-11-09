@@ -20,11 +20,10 @@ a {
 }
 
 
+
 body {
-  background-color: #101010;
   display: flex;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
 }
 
 

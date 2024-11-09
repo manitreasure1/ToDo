@@ -1,10 +1,17 @@
 
+import styles from '../main.module.css'
+
 
 export function Home(){
     return(
-        <h1>
-            Home Page
-        </h1>
+        <div>
+            <h1 className={styles.home_h1}>Home Page</h1>
+            <div className={styles.container}>
+                <div className={styles.add_card}>
+                    <span onClick={{}} class="material-symbols-outlined">add</span>
+                </div>               
+            </div>
+        </div>      
     )
 }
 
