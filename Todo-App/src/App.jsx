@@ -1,8 +1,13 @@
-import { BrowserRouter, Route, Routes, Router } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import MainPage from './components/main-page'
+
 import SideNav from './components/side-nav'
-import {Upcoming, Today, Calandar, Home, Settings} from './components/home'
+import Home from './components/home'
+import { Settings } from './components/settings'
+import { Upcoming } from './components/upcoming'
+import { Today } from './components/today'
+import { Calandar } from './components/calandar'
+
 import styles from './main.module.css'
 
 function App() {
@@ -10,7 +15,10 @@ function App() {
 
   return (
     <>
-    <BrowserRouter> 
+    <BrowserRouter future={{
+      v7_startTransition:true,
+      v7_relativeSplatPath:true
+    }}> 
     <div className={styles.hero}>
     <SideNav/>
       <div className={styles.main}>
@@ -23,8 +31,9 @@ function App() {
         </Routes>
       </div>
     </div>
-     
+    
     </BrowserRouter>
+    
     </>
   )
 }

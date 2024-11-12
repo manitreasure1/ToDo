@@ -1,10 +1,11 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 
 
-export const TodoContext = createContext(null);
+export const TodoContext = createContext(false);
 
 const TodoState =({children})=>{
-    return <TodoContext.Provider value={{}}>{children}</TodoContext.Provider>
+    const [displayform, setDisplayform] = useState(null)
+    return <TodoContext.Provider value={{displayform, setDisplayform}}>{children}</TodoContext.Provider>
 }
 
 export default TodoState;

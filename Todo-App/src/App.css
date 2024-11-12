@@ -10,10 +10,13 @@ ul{
 .side-nav{
   margin: 1rem;
   max-width: 220px;
+  max-height: 95vh;
   padding: 0 2rem 1rem;
   border-radius: 15px;
   border: 2px solid;
   background-color: rgb(243, 245, 247);
+  position: sticky;
+  top: 0;
 }
 .side-nav a:hover, a:focus {
   color: #debb7e;
